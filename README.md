@@ -1,2 +1,3 @@
 # round-robin-arbiter
-Arbiter pdf contain specification of the design
+1.Arbiter pdf contain specification of the 
+2.Roundrobin.v contain synthesizable code
