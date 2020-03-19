@@ -1,0 +1,6 @@
+create_clock -period 10.000 -name sysclk [get_ports clk]
+create_generated_clock -name gclk -source [get_ports clk] -divide_by 1 [get_pins d1/q_reg/Q]
+set_input_delay -clock sysclk 4.000 [all_inputs]
+set_input_delay -clock sysclk -min 3.000 [all_inputs]
+set_output_delay -clock gclk 1.000 [all_outputs]
+set_output_delay -clock gclk -min 0.500 [all_outputs]
